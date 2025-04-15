@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f1ec;
+}
+
+/* Navbar Logo */
+.nav-logo {
+    display: flex;
+    flex-direction: column; /* Stacks "procrasti" and "NOT" */
+    font-family: 'georgia', serif; /* Font for "procrasti" */
+    font-size: 1.0rem; /* Adjust size */
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    line-height: 1; /* Reduces space between lines */
+    position: absolute;
+    left: 20px; /* Moves it all the way to the left */
+    top: 50%;
+    transform: translateY(-50%); /* Keeps it centered vertically */
+}
+
+.nav-logo span {
+    font-family: 'Bodoni Moda', serif; /* Font for "NOT" */
+    font-size: 1.5rem; /* Larger "NOT" */
+    font-weight: bold;
+    color: #6bbaf1; /* Blue color */
+    display: block; /* Ensures "NOT" appears below */
+    line-height: 1; /* Adjust spacing */
+    margin-left: 17px;
+    transform: scaleX(1.3);
+    margin-top: -5px;
+    
+}
+
+.Login {
+    display : flex;
+    right: 20px;
+    top: 36px;
+    transform: translateY(-50%);
+    position: absolute;
+
+}
+
+/* Navigation Bar */
+nav {
+    background-color:#f2f1ec;
+    /* Blue color */
+    display: flex;
+    justify-content: center;
+    /* Centers the navigation links */
+    align-items: center;
+    padding: 15px 20px;
+    height: 50px;
+    position: relative;
+}
+
+/* Navigation Links */
+ul {
+    list-style: none;
+    /* Removes default list styles */
+    display: flex;
+    /* Makes the list horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    margin: 0 15px;
+    /* Adds spacing between menu items */
+}
+
+/* Styling the links */
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centers dropdown */
+    background: #f2f1ec;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 150px;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Dropdown links */
+.dropdown a {
+    padding: 8px 15px;
+    display: block;
+    color: black;
+}
+
+/* Hover effect for dropdown links */
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown when hovering over menu item */
+li:hover .dropdown {
+    display: block;
+}
+
+
+
+/* Logo positioning */
+.logo-container {
+    position: absolute;
+    left: 13%;
+    top: 25%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+
+/* Logo Image */
+.logo-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Device ad positioning */
+.Device-ad-container {
+    position: absolute;
+    right: 5%; /* Keeps it aligned to the right */
+    top: 50%; /* Adjust vertical position */
+    transform: translateY(-50%);
+    max-width: 700px; /* Enlarges the image */
+    margin-top: 20px;
+    z-index: 1;
+}
+
+
+
+
+/* Device ad */
+.Device-ad-container img {
+    max-width: 650px;
+    height: auto;
+}
+
+
+/* Section Divider (Black Line) */
+.section-divider {
+    
+    width: 30%;
+    max-width: 800px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 40%; /* Moves it up under the logo */
+    left: 10%; /* Aligns with the logo */
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+   max-width: 500px; /* Adjusts width*/
+    margin-left: 10%; /* Aligns with logo */
+    margin-top: 230px; /* Moves it closer */
+    gap: 5px; /* Adds spacing between items */
+}
+
+
+
+
+.feature {
+    display: flex;
+    align-items: center;
+    width: 45%; /* Keeps two columns properly spaced */
+    margin-bottom: 10px; /* Reduces gap between rows */
+}
+
+/* Adjust Icon Size */
+.feature img {
+    width: 35px; /* Adjust icon size*/
+    height: 35px;
+    margin-right: 8px; /* Brings text closer to icons */
+    margin-bottom: 10px;
+}
+
+/* Title Spacing */
+.feature h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Description Spacing */
+.feature p {
+    font-size: 0.9rem;
+    margin: 5.5px 0 0;
+    color: #383838;
+}
